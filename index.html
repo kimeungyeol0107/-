@@ -16,11 +16,16 @@
       font-size: 2rem;
       margin-bottom: 20px;
     }
+    p.description {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      color: #555;
+    }
     .item-container {
       display: flex;
-      flex-wrap: wrap; /* 화면을 넘기면 다음 줄로 내려감 */
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px; /* 아이템 간 간격 */
+      gap: 20px;
     }
     .item {
       text-align: center;
@@ -28,7 +33,7 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 200px; /* 아이템 크기 */
+      width: 200px;
     }
     .item img {
       max-width: 100%;
@@ -43,10 +48,27 @@
       font-weight: bold;
       color: #007BFF;
     }
+    .join-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #007BFF;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+    .join-button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
-  <h1>입양하세요 딸랑이 매입표 </h1>
+  <h1>입양하세요 딸랑이 매입표</h1>
+  <p class="description">가격이 X인건 현재 매입 안하며 팔고 싶은 딸랑이가 있다면<br>
+  아래 버튼을 눌러 서버에 가입하세요</p>
   <div class="item-container">
     <div class="item">
       <h2>딸랑이</h2>
@@ -67,12 +89,13 @@
       <h2>구름과 무지개 딸랑이</h2>
       <p class="value">매입가: X원</p>
       <img src="https://i.ibb.co/cwNrrjm/image.png" alt="구름과 무지개 딸랑이">
-      </div>
+    </div>
     <div class="item">
       <h2>황금 갈기 유니콘 딸랑이</h2>
       <p class="value">매입가: X원</p>
       <img src="https://i.ibb.co/LrF6b9d/image.png" alt="황금 갈기 유니콘 딸랑이">
     </div>
   </div>
+  <a href="http://roblox.com" class="join-button">입양하세요 브섭 바로가기</a>
 </body>
 </html>
